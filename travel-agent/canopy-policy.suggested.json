@@ -1,0 +1,13 @@
+{
+  "name": "travel-default",
+  "description": "Suggested policy preset for the travel-agent starter. Tight cap because v1 only pays for flight data lookups (e.g. FlightAPI) — booking is deferred until the commerce rail (ACP) is live.",
+  "spend_cap_usd": 5,
+  "cap_period_hours": 24,
+  "approval_required": true,
+  "approval_threshold_usd": 0.5,
+  "notes": [
+    "v1 of travel-agent is search-and-surface — it pays for flight data and presents options. Actual booking is gated on ACP support and deferred.",
+    "Once booking is supported, this preset will need a higher cap. Don't loosen the policy until then.",
+    "Allowlisted services (gates which registered flight-data providers the agent may pay — e.g. FlightAPI) are managed in the Canopy dashboard."
+  ]
+}

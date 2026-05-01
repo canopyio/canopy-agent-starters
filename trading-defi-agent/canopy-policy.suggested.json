@@ -1,0 +1,13 @@
+{
+  "name": "trading-defi-default",
+  "description": "Suggested policy preset for the trading-defi-agent starter. Adjust caps + allowlist in the dashboard once you're past initial testing.",
+  "spend_cap_usd": 50,
+  "cap_period_hours": 24,
+  "approval_required": true,
+  "approval_threshold_usd": 5,
+  "notes": [
+    "approval_required=true means single payments above approval_threshold_usd ($5) need human approval.",
+    "Set approval_required=false in the dashboard if you want every payment under the cap to auto-approve.",
+    "Allowlisted services (gates which registered DEX + price-feed providers the agent may pay) are managed in the Canopy dashboard. The trust boundary is the registry: only services with a registered slug can be allowlisted."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "lead-gen-default",
+  "description": "Suggested policy preset for the lead-gen-agent starter. Cap is sized for ~250 enrichment calls/day at typical per-lead pricing.",
+  "spend_cap_usd": 25,
+  "cap_period_hours": 24,
+  "approval_required": true,
+  "approval_threshold_usd": 2,
+  "notes": [
+    "$2 approval threshold catches batches and bulk-priced providers — single per-lead lookups should pass through.",
+    "Set approval_required=false in the dashboard if the agent runs on a fixed enrichment list and you want unattended runs.",
+    "Allowlisted services (gates which registered lead-data providers the agent may pay) are managed in the Canopy dashboard."
+  ]
+}

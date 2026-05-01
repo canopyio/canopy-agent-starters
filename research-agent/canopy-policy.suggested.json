@@ -1,0 +1,14 @@
+{
+  "name": "research-default",
+  "description": "Suggested policy preset for the research-agent starter. Tight cap because data API calls are typically cents — most prompts should never approach the cap.",
+  "spend_cap_usd": 5,
+  "cap_period_hours": 24,
+  "approval_required": true,
+  "approval_threshold_usd": 0.5,
+  "notes": [
+    "$5/24h cap is intentionally tight — research-agent makes many small per-call payments to data APIs.",
+    "Approval threshold of $0.50 means anything bulk-priced gets a human-in-the-loop pause.",
+    "Set approval_required=false in the dashboard if you trust the agent to research within the cap unsupervised.",
+    "Allowlisted services (gates which registered providers the agent may pay) are managed in the Canopy dashboard."
+  ]
+}

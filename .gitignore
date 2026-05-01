@@ -1,0 +1,7 @@
+# Per-starter ignores live in each starter's own .gitignore (so customers who
+# fork or scaffold a single starter inherit a clean ignore list). This umbrella
+# only catches cruft at the canopy-agent-starters/ root itself.
+
+.DS_Store
+Thumbs.db
+*.log

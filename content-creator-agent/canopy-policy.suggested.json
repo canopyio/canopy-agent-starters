@@ -1,0 +1,13 @@
+{
+  "name": "content-creator-default",
+  "description": "Suggested policy preset for the content-creator-agent starter. Sized for a typical short-form video or post (3-5 paid assets).",
+  "spend_cap_usd": 20,
+  "cap_period_hours": 24,
+  "approval_required": true,
+  "approval_threshold_usd": 3,
+  "notes": [
+    "$3 approval threshold catches anything more expensive than a typical stock asset or single AI generation call.",
+    "Cumulative spend per project can stack — the system prompt asks the agent to surface running cost so you can pause before hitting the cap.",
+    "Allowlisted services (gates which registered stock + AI gen providers the agent may pay) are managed in the Canopy dashboard."
+  ]
+}
