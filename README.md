@@ -7,10 +7,10 @@ Pre-configured, use-case-focused agent starters built on [Claude Agent SDK](http
 ## Get started
 
 ```bash
-npx create-canopy-agent my-agent
+npx @canopy-ai/create-canopy-agent my-agent
 ```
 
-The [`create-canopy-agent`](../sdk/create-canopy-agent) CLI walks you through:
+The [`@canopy-ai/create-canopy-agent`](../create-canopy-agent) CLI walks you through:
 
 1. Picking a starter
 2. Connecting to your Canopy org via your org API key

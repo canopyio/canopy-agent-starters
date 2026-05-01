@@ -12,7 +12,7 @@ A terminal-driven trading + DeFi agent built on [`@anthropic-ai/claude-agent-sdk
 
 ```bash
 # Scaffold via the CLI (preferred — auto-creates the agent + policy):
-npx create-canopy-agent my-trading-bot
+npx @canopy-ai/create-canopy-agent my-trading-bot
 # → pick `trading-defi-agent`, paste your org API key.
 
 # Or hand-clone:

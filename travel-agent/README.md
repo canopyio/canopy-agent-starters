@@ -7,7 +7,7 @@ A terminal-driven travel-search agent built on [`@anthropic-ai/claude-agent-sdk`
 ## How to run
 
 ```bash
-npx create-canopy-agent my-travel-agent
+npx @canopy-ai/create-canopy-agent my-travel-agent
 # → pick `travel-agent`, paste your org API key.
 ```
 

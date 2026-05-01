@@ -7,7 +7,7 @@ A terminal-driven research agent built on [`@anthropic-ai/claude-agent-sdk`](htt
 ## How to run
 
 ```bash
-npx create-canopy-agent my-research-agent
+npx @canopy-ai/create-canopy-agent my-research-agent
 # → pick `research-agent`, paste your org API key.
 ```
 

@@ -7,7 +7,7 @@ A terminal-driven treasury / bill-pay agent built on [`@anthropic-ai/claude-agen
 ## How to run
 
 ```bash
-npx create-canopy-agent my-billpay-agent
+npx @canopy-ai/create-canopy-agent my-billpay-agent
 # → pick `treasury-billpay-agent`, paste your org API key.
 ```
 

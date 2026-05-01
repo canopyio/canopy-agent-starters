@@ -7,7 +7,7 @@ A terminal-driven content-production agent built on [`@anthropic-ai/claude-agent
 ## How to run
 
 ```bash
-npx create-canopy-agent my-content-agent
+npx @canopy-ai/create-canopy-agent my-content-agent
 # → pick `content-creator-agent`, paste your org API key.
 ```
 
