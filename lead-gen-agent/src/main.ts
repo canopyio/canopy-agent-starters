@@ -29,12 +29,13 @@ canopy_approve, canopy_deny, canopy_get_budget, canopy_ping,
 canopy_wait_for_approval, etc.).` + helpExtra;
 
 async function main(): Promise<void> {
+  const mcpToken = process.env.CANOPY_MCP_TOKEN;
   const apiKey = process.env.CANOPY_API_KEY;
   const agentId = process.env.CANOPY_AGENT_ID;
-  if (!apiKey || !agentId) {
+  if (!agentId || (!mcpToken && !apiKey)) {
     printError(
       new Error(
-        "CANOPY_API_KEY and CANOPY_AGENT_ID must be set. Copy .env.example to .env and fill in values.",
+        "CANOPY_AGENT_ID plus either CANOPY_MCP_TOKEN (browser-scaffolded) or CANOPY_API_KEY (paste-scaffolded) must be set. Copy .env.example to .env and fill in values.",
       ),
     );
     process.exit(1);
@@ -72,10 +73,9 @@ async function main(): Promise<void> {
           canopy: {
             type: "http",
             url: mcpUrl,
-            headers: {
-              Authorization: `Bearer ${apiKey}`,
-              "X-Canopy-Agent-Id": agentId,
-            },
+            headers: mcpToken
+              ? { Authorization: `Bearer ${mcpToken}` }
+              : { Authorization: `Bearer ${apiKey}`, "X-Canopy-Agent-Id": agentId },
           },
         },
         allowedTools: ["mcp__canopy__*"],
