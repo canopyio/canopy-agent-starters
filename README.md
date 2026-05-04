@@ -13,7 +13,7 @@ npx @canopy-ai/create-canopy-agent my-agent
 The [`@canopy-ai/create-canopy-agent`](../create-canopy-agent) CLI walks you through:
 
 1. Picking a starter
-2. Connecting to your Canopy org via your org API key
+2. Connecting to your Canopy org in the browser and minting a scoped MCP token
 3. Auto-creating the policy + agent in your Canopy DB (no copy-paste from the dashboard)
 4. Scaffolding the project locally with `.env` filled in
 
@@ -38,7 +38,7 @@ Every starter has the same shape:
 <starter>/
 ├── package.json                # name, description, deps
 ├── tsconfig.json
-├── .env.example                # CANOPY_API_KEY, CANOPY_AGENT_ID, ANTHROPIC_API_KEY
+├── .env.example                # MCP token/API key fallback, agent id, Anthropic key
 ├── README.md                   # use case, demo prompts, policy preset
 ├── canopy-policy.suggested.json # paste-into-dashboard preset
 └── src/

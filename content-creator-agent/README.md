@@ -8,7 +8,7 @@ A terminal-driven content-production agent built on [`@anthropic-ai/claude-agent
 
 ```bash
 npx @canopy-ai/create-canopy-agent my-content-agent
-# → pick `content-creator-agent`, paste your org API key.
+# → pick `content-creator-agent`, authorize in your browser.
 ```
 
 Or hand-clone: `cp .env.example .env` → fill creds → `npm install && npm start`.

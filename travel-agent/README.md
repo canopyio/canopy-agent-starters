@@ -8,7 +8,7 @@ A terminal-driven travel-search agent built on [`@anthropic-ai/claude-agent-sdk`
 
 ```bash
 npx @canopy-ai/create-canopy-agent my-travel-agent
-# → pick `travel-agent`, paste your org API key.
+# → pick `travel-agent`, authorize in your browser.
 ```
 
 Or hand-clone: `cp .env.example .env` → fill creds → `npm install && npm start`.

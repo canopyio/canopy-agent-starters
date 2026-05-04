@@ -8,7 +8,7 @@ A terminal-driven lead-enrichment agent built on [`@anthropic-ai/claude-agent-sd
 
 ```bash
 npx @canopy-ai/create-canopy-agent my-lead-gen-agent
-# → pick `lead-gen-agent`, paste your org API key.
+# → pick `lead-gen-agent`, authorize in your browser.
 ```
 
 Or hand-clone: `cp .env.example .env` → fill creds → `npm install && npm start`.

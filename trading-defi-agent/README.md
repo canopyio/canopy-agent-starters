@@ -13,11 +13,11 @@ A terminal-driven trading + DeFi agent built on [`@anthropic-ai/claude-agent-sdk
 ```bash
 # Scaffold via the CLI (preferred — auto-creates the agent + policy):
 npx @canopy-ai/create-canopy-agent my-trading-bot
-# → pick `trading-defi-agent`, paste your org API key.
+# → pick `trading-defi-agent`, authorize in your browser.
 
 # Or hand-clone:
 cp .env.example .env
-#   Edit .env: fill in CANOPY_API_KEY, CANOPY_AGENT_ID, ANTHROPIC_API_KEY.
+#   Edit .env: fill in CANOPY_MCP_TOKEN or CANOPY_API_KEY, plus CANOPY_AGENT_ID and ANTHROPIC_API_KEY.
 npm install
 npm start
 ```
